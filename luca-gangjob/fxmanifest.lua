@@ -4,7 +4,7 @@ games { 'rdr3', 'gta5' }
 lua54 'yes'
 
 author 'luca2nl'
-description 'Witwas, OX ESX REQUIRED. DM lucca.nl voor hulp. September 2024'
+description 'Witwas, OX ESX REQUIRED. DM aculn voor hulp. September 2024'
 version '1.0.0'
 
 
