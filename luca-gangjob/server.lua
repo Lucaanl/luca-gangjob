@@ -40,7 +40,10 @@ end)
 --------------------------- WITWAS --------------------------------
 RegisterNetEvent('witwas')
 AddEventHandler('witwas', function(blackMoney)
-    exports.ox_inventory:RemoveItem(source, 'black_money', blackMoney)
-    exports.ox_inventory:AddItem(source, 'money', blackMoney * Luca.Witwas.percentageAfterDeduction)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    if xPlayer.job.name == Luca.job then
+        exports.ox_inventory:RemoveItem(source, 'black_money', blackMoney)
+        exports.ox_inventory:AddItem(source, 'money', blackMoney * Luca.Witwas.percentageAfterDeduction)
+    end
 end)
 --------------------------- WITWAS --------------------------------
